@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stopwatch</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+        integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.13.1/css/all.css"
+        integrity="sha384-xxzQGERXS00kBmZW/6qxqJPyxW3UR0BPsL4c8ILaIWXva5kFi7TxkIIaMiKtqV1Q" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="favicon.ico">
+</head>
+
+<body class=" text-center">
+    <div class="container">
+        <p class="my-5 heading display-1">Stopwatch</p>
+        <div class="row">
+            <div class="col-sm-12 mt-n4">
+                <p class="line " id="hr">0</p>
+                <p class="line ">:</p>
+                <p class="line " id="min">0</p>
+                <p class="line ">:</p>
+                <p class="line " id="sec">0</p>
+                <p class="line ">:</p>
+                <p class="line " id="msec">0</p>
+            </div>
+            <div class="col-sm-12 mt-2">
+                <button class="btn m-4 py-2 px-4" id="start" onclick="start()" ><i class="fas fa-play mr-3"></i>Start</button>
+                <button class="btn m-4 py-2 px-4" onclick="stop()" ><i class="fas fa-stop mr-3"></i>Stop</button>
+                <button class="btn m-4 py-2 px-4" onclick="reset()"><i class="fas fa-redo mr-3"></i>Reset</button>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <p class="copy mt-5">&copy; Copyright by Hamna Kazmi.</p>
+    </div>
+    <script src="app.js"></script>
+</body>
+
+</html>
